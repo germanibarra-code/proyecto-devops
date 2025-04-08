@@ -1,0 +1,229 @@
+
+- command: pip install boto3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Defaulting to user installation because normal site-packages is not writeable                                                                                                                                                      Requirement already satisfied: boto3 in /usr/local/lib/python3.9/site-packages (1.37.1)                                                                                                                                            Requirement already satisfied: botocore<1.38.0,>=1.37.1 in /usr/local/lib/python3.9/site-packages (from boto3) (1.37.1)                                                                                                            Requirement already satisfied: s3transfer<0.12.0,>=0.11.0 in /usr/local/lib/python3.9/site-packages (from boto3) (0.11.2)                                                                                                          Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /usr/local/lib/python3.9/site-packages (from boto3) (1.0.1)                                                                                                               Requirement already satisfied: urllib3<1.27,>=1.25.4 in /usr/local/lib/python3.9/site-packages (from botocore<1.38.0,>=1.37.1->boto3) (1.26.20)                                                                                    Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /usr/lib/python3.9/site-packages (from botocore<1.38.0,>=1.37.1->boto3) (2.8.1)                                                                                      Requirement already satisfied: six>=1.5 in /usr/lib/python3.9/site-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.38.0,>=1.37.1->boto3) (1.15.0)
+  exit_code: 0
+  shell: bash
+  session_id: 3da560aa05fb48cbb3e2e4ed77be722b
+  cwd: /home/cloudshell-user
+  time: 1743192632
+- command: python3 gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743193106
+- command: python3 gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743193142
+- command: .py
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743193689
+- command: nano gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743193694
+- command: nano gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194034
+- command: $ nano gestionar_ec2.py                                                                                                                                                                                     ID: i-007d56b8feb79e6ff, Estado: running                                                                                                                                                                                           Instancia i-007d56b8feb79e6ff detenida.
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194044
+- command: mkdir -p archivos_respaldo
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194233
+- command: echo \"Hola desde DevOps\" > archivos_respaldo/archivo1.txt
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194233
+- command: echo \"Este es otro archivo\" > archivos_respaldo/archivo2.txt
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194233
+- command: nano backup_s3.sh
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194273
+- command: chmod +x backup_s3.sh
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194282
+- command: ./backup_s3.sh
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194283
+- command: ls                                                                                                                                                                                                           archivos_respaldo  backup_2025-03-28.tar.gz  backup.log  backup_s3.sh  gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194291
+- command: cat backup.log                                                                                                                                                                                               Fri Mar 28 08:38:02 PM UTC 2025: Iniciando respaldo...                                                                                                                                                                             upload: ./backup_2025-03-28.tar.gz to s3://respaldo-german-devops/backup_2025-03-28.tar.gz                                                                                                                                         Fri Mar 28 08:38:03 PM UTC 2025: Respaldo subido exitosamente a S3.
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194317
+- command: .py
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194416
+- command: respaldo
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194631
+- command: ~ $ echo \"Hola desde DevOps\" > archivos_respaldo/archivo1.txt                                                                                                                                                bash: /home/cloudshell-user: Is a directory
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194631
+- command: mkdir -p archivos_respaldo2
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194671
+- command: her file\" > archivos_respaldo2/archivo2.txt
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194702
+- command: echo \"This is another fileee\" > archivos_respaldo2/archivo1.txt
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194712
+- command: archivos_respaldo  archivos_respaldo2  backup_2025-03-28.tar.gz  backup.log  backup_s3.sh  gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194744
+- command: python3 gestionar_ec2.py                                                                                                                                                                                     ID: i-007d56b8feb79e6ff, Estado: stopped                                                                                                                                                                                           Instancia i-007d56b8feb79e6ff detenida.
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194761
+- command: python3 gestionar_ec2.py                                                                                                                                                                                                       ID: i-007d56b8feb79e6ff, Estado: stopped                                                                                                                                                                                           Instancia i-007d56b8feb79e6ff detenida.
+  exit_code: 0
+  shell: bash
+  session_id: abff2eaf88e74672a61d330c01a8dd2a
+  cwd: /home/cloudshell-user
+  time: 1743194788
+- command: nano gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: 0e4f964dece8419eac510bd985d4d146
+  cwd: /home/cloudshell-user
+  time: 1743451932
+- command: nano gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: 53307bc87bdc4c968389e1fb5b1a864b
+  cwd: /home/cloudshell-user
+  time: 1743711562
+- command: nano gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744055670
+- command: python aws_script.py                                                                                                                                                                                         python: can't open file '/home/cloudshell-user/aws_script.py': [Errno 2] No such file or directory
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744056041
+- command: [A                                                                                                                                                                                                           bash: [A: command not found
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744056485
+- command: nano gestionar_ec2.py^C
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744056488
+- command: ^C
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744056489
+- command: [A                                                                                                                                                                                                           bash: [A: command not found                                                                                                                                                                                                        cloudshell-user@:~~ $ nano gestionar_ec2.py^C                                                                                                                                                                                      cloudshell-user@:~~ $ ^C                                                                                                                                                                                                           cloudshell-user@:~~ $                                                                                                                                                                                                              cloudshell-user@:~~ $ nano gestionar_ec2.py
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744056500
+- command: py                                                                                                                                                                                                           python: can't open file '/home/cloudshell-user/aws_script.py': [Errno 2] No such file or directory
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744056504
+- command: nano aws_script.py
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744056566
+- command: python aws_script.py                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               === Reporte Automático de Uso de Recursos ===                                                                                                                                                                                                                                                                                                                                                                                                                         Listado de Instancias EC2:                                                                                                                                                                                                         Instancia ID: i-0df981f1c80348bec, Estado: running, IP Pública: 54.224.46.31                                                                                                                                                       Instancia ID: i-0839b8da1f52c7cbf, Estado: running, IP Pública: 54.175.49.194                                                                                                                                                      Instancia ID: i-085a1a521e33b9dfe, Estado: running, IP Pública: 3.80.212.159                                                                                                                                                       Instancia ID: i-00be1ca327255d2e0, Estado: running, IP Pública: 54.197.78.51                                                                                                                                                       Instancia ID: i-0e931fd86cc66bfc2, Estado: running, IP Pública: 3.95.147.13                                                                                                                                                        Instancia ID: i-007d56b8feb79e6ff, Estado: running, IP Pública: 184.72.206.58                                                                                                                                                      Instancia ID: i-0b80332fd6f65c93b, Estado: running, IP Pública: 44.211.150.52                                                                                                                                                      Instancia ID: i-09692df2823126e8b, Estado: running, IP Pública: 52.90.186.173                                                                                                                                                                                                                                                                                                                                                                                         Listado de Buckets S3 y sus Objetos:                                                                                                                                                                                               Bucket: mi-bucket-devops1                                                                                                                                                                                                            - index.html (Última modificación: 2025-03-21 22:26:33+00:00)                                                                                                                                                                      - index.html.swp (Última modificación: 2025-03-21 22:26:33+00:00)                                                                                                                                                                  - styles.css (Última modificación: 2025-03-21 22:26:33+00:00)                                                                                                                                                                    Bucket: respaldo-german-devops                                                                                                                                                                                                       - backup_2025-03-28.tar.gz (Última modificación: 2025-03-28 20:38:04+00:00)                                                                                                                                                                                                                                                                                                                                                                                         === Fin del Reporte ===
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744056575
+- command: thon aws_script.py
+  exit_code: 0
+  shell: bash
+  session_id: dccdf56232014a9297426178f156c318
+  cwd: /home/cloudshell-user
+  time: 1744056968
+- command: git init                                                                                                                                                                                                                                        hint: Using 'master' as the name for the initial branch. This default branch name                                                                                                                                                                                     hint: is subject to change. To configure the initial branch name to use in all                                                                                                                                                                                        hint: of your new repositories, which will suppress this warning, call:                                                                                                                                                                                               hint:                                                                                                                                                                                                                                                                 hint: \t git config --global init.defaultBranch <name>                                                                                                                                                                                                                 hint:                                                                                                                                                                                                                                                                 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and                                                                                                                                                                                               hint: 'development'. The just-created branch can be renamed via this command:                                                                                                                                                                                         hint:                                                                                                                                                                                                                                                                 hint: \t git branch -m <name>                                                                                                                                                                                                                                          Initialized empty Git repository in /home/cloudshell-user/.git/
+  exit_code: 0
+  shell: bash
+  session_id: ff44d38376324184b7224952ca180eaf
+  cwd: /home/cloudshell-user
+  time: 1744142306
+- command: git remote add origin https://github.com/germanibarra-code/proyecto-devops.git
+  exit_code: 0
+  shell: bash
+  session_id: ff44d38376324184b7224952ca180eaf
+  cwd: /home/cloudshell-user
+  time: 1744142386

@@ -1,3 +1,2 @@
-nano setup.sh
-chmod +x setup.sh
-./setup.sh
+pip install boto3
+exit
