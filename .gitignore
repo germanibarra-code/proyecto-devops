@@ -1,0 +1,23 @@
+# Ignorar archivos de historial de terminal
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.sudo_as_admin_successful
+.selected_editor
+.cache/
+# Archivos de logs
+*.log
+
+# Archivos de backup
+*.tar.gz
+*.bak
+
+# Entornos virtuales de Python (por si usas)
+venv/
+__pycache__/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
